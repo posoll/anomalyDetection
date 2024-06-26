@@ -1,0 +1,38 @@
+.input_primary
+{
+    border:none;
+    background-color:rgba($light-green,0.5);
+    padding:10px;
+    display:block;
+    border-radius:0.4rem;
+    width:70%;
+    font-size: 1.6rem;
+    font-weight: 100;
+    color:rgba($color-black,0.8);
+    &:focus{
+        outline: none;
+        border-bottom:2px solid $dark-green;
+        background-color:rgba($light-green,0.3);
+    }
+    &::placeholder
+    {
+        color:$dark-gray;
+        font-weight: 100;
+    }
+   &:not(:first-child)
+   {
+        margin-top:3rem;
+   }
+}
+.label_primary
+{
+    font-size: 1.4rem;
+    color:rgba($color-black,0.7);
+}
+.my-radio
+{
+    .abc
+    {
+        
+    }
+}

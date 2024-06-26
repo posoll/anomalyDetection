@@ -1,0 +1,34 @@
+.feedback
+{
+    background-color:rgba($color-white,0.4);
+    padding:5rem;
+    transform: skewX(-10deg);
+   
+    .feedback-content{
+        transform: skew(10deg);
+        overflow: hidden;
+        .profile-img
+        {
+            width: 13rem;
+            height:13rem;
+            background-color: red;
+            border-radius:13rem;
+            background-image: url('../img/nat-8.jpg');
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            float: left;
+        }
+        .reveiews-content
+        {
+            float: left;
+            width: 60%;
+            margin-left: 2rem;
+        }
+    }
+    &:hover .profile-img
+    {
+        filter: brightness(50%);
+        transition: all 0.4s;
+    }
+}

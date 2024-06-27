@@ -1,0 +1,104 @@
+
+.card-container
+{
+    font-size: 3rem;
+    color: white;
+    transition: all 1s;
+    height: 50rem;
+    position: relative;
+    margin: 3rem;
+   
+   .feacture-card
+    {   
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50rem;
+        width: 100%;
+        transition: all 1s;
+        transform-style: preserve-3d;
+        &:hover
+        {
+            transform: rotateY(180deg);
+        }
+        &:hover.card-side-front
+        {
+            opacity: 0;
+        }
+            .card-side
+            {
+                height: 50rem;
+                background-color: red;
+                
+            }
+            .card-side-front
+            {
+                height: 50rem;
+                background-color: white;
+                width: 100%;
+                //backface-visibility: hidden;
+                position: absolute;
+                overflow: hidden;
+                transition: all 0.5s;
+               
+                .card-img
+                {
+                    height:20rem;
+                    width: 100%;
+                    //  background-image:linear-gradient(to top right, rgba($color-light-orange,0.8), rgba($color-dark-orange,0.8)),url('../img/nat-5.jpg');
+                   
+                    clip-path:polygon(0 0,100% 0,100% 80%,0 100%);
+                        background-position: top;
+                        background-size: cover;
+                       background-repeat: no-repeat;
+       
+                       }
+
+                 }
+                 
+                 ul.card-list{
+                    text-align: center;
+                    line-height:normal;
+                   
+                     li.card-list-item{
+                        //  list-style: none;
+                        a{
+                            text-decoration: none;
+                            color: $color-dark-gray;
+                            font-size: 1.6rem;
+                            letter-spacing:1px;
+                            display: inline-block;
+                            padding:1.9rem 1rem;
+                            border-bottom:1px solid #9E9E9E;
+                            width: 70%;
+                            &:first-letter
+                            {
+                                text-transform:uppercase;
+                            }
+                         }
+                         &:last-child {
+                             a{
+                                border-bottom:none;
+                             }
+                        }
+                     }
+                 }
+                
+            .card-side-back
+            {
+                transform: rotateY(180deg);
+                background-image: linear-gradient(to top, $color-dark-orange , $color-light-orange);
+                .card-back-content
+                {
+                    
+                    width:100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform:translate(-50%,-50%);
+                }
+            }
+           
+    }
+   
+}

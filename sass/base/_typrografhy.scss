@@ -1,0 +1,126 @@
+.heading-primery {
+    color: white;
+    text-align: center; 
+    &_main {
+        display: block;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        font-size: 6rem;
+        animation-name: moveInLeft;
+        animation-duration: 2s; 
+    }
+    &_sub {
+            display: block;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 1.7rem;
+            margin-bottom: 5rem;
+            animation-name: moveInRight;
+            animation-timing-function: ease-out;
+            animation-duration: 2s; }
+}
+.heading-secondry
+{
+    font-size:3.5rem;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right,$light-green,$dark-green);
+    display: inline-block;
+    -webkit-background-clip:text;
+    color: transparent;
+    transition:all 1s;
+    text-transform: uppercase;
+     text-shadow:0 10px 10px rgba($color-black,0.2);
+    &:hover
+    {
+        // transform: scale(1.2);
+        transform: skewX(5deg) skewY(10deg);
+     
+
+    }
+}
+.heading-third
+{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: gray;
+    text-transform: uppercase;
+}
+.para
+{
+    font-size: 1.4rem;
+    //color: gray;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+}
+.col-1-2{
+    position: relative;
+    transform: scale(0.8);
+    [class^="img-"]
+    {
+        width: 50%;
+        box-shadow: 0rem 1rem 3rem -1rem $color-black;
+        border-radius:0.5rem;
+        //z-index: -1;
+        position: absolute;
+        &:hover
+        {
+            box-shadow: 0rem 0rem 5rem -1rem $color-black;
+            width: 60%;
+            z-index:100;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            outline: 0.5rem solid $dark-green;
+            outline-offset: 1rem;
+        }
+    }
+    .img-1
+    {
+       top:2rem;
+        left:0;
+       
+    }
+    .img-2
+    {
+        top:5.2rem;
+        left:22rem ;
+    }
+    
+    .img-3
+    {
+        top:12.6rem;
+        left:8.8rem;
+    }
+}
+.info-icon
+{
+    display: inline-block;
+    font-size: 6rem;
+    color: $dark-green;
+}
+.heading-fourth
+                 {
+                    color:$color-white;
+                    font-weight:100;
+                    font-size: 3rem;
+                    line-height: 3.6rem;
+                }
+                 .heading-front
+                 {
+                     width:60%;
+                    text-align: right;
+                    text-transform: uppercase;
+                    position:absolute;
+                       top:12rem;
+                       right:7%;
+                       .heading-background
+                    {
+                         padding: 0 1rem;
+                    }
+                 }
+
+
+// img
+// {
+//     // box-shadow: 0 0 20px 10px #839192;
+//     filter: drop-shadow(5px 5px 5px red);
+// }
